@@ -90,11 +90,11 @@ print(binarySearch(SiraliList,7))
 def medianOfList(Sirali):
      n = len(Sirali)
      if(n%2==1):
-         middle = int(n/2)
+         middle = int(n/2)+1
          median = Sirali[middle]
      else:
-         middle1 = Sirali[int(n/2)]
-         middle2 = Sirali[int(n/2)+1]
-         median = (middle1+middle2)/2
+         middle1 = int(n/2)-1
+         middle2 = middle1+1
+         median = (Sirali[middle1]+Sirali[middle2])/2
      return median
 print(medianOfList(SiraliList))

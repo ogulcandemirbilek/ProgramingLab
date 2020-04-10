@@ -1,0 +1,31 @@
+sympy : Sembolik ve cebirsel matematik işlemleri için geliştirilmiş bir kütüphanedir.
+
+Symbol : içine yazılmış olan matematik sembolünü döndürür. Böylece döndürdüğümüz bu değer artık sembol olarak davranır üstünde herhangi bi matematiksel işlem yapılmaz.
+
+factor : İçine yazılan ifadenin çarpanlarına ayırılmış halini döndürür.
+
+expand : factor fonksiyonunun tam tersidir. İçine yazılan matematiksel ifadeyi en az değişkenli halde geri döndürür.
+
+pprint(pretty print): İçine yazılan matematiksel ifadeleri o ifadelerin sembolik şekilde ki hallerini print etmeyi sağlar.
+
+.subs({}) : Bu fonskiyon sembolik ifadelere değer atamamıza yarar. Örn; .subs({x:1,sigma:3})
+
+exp() : İçine girilen değeri e üssü şeklinde gösterir. Örn(exp(x)-->e**x)
+
+plotting : Grafiksel gösterimler yapmamıza yarayan sympy kütüphanesinin bir fonksiyonudur.
+
+plotting.plot() : İçine girilen bilgiler ile grafiksel gösterimi sağlar. () içine ilk olarak gösterilcek olan fonksiyon ve için de ki sembollerin değerleri girilir, daha sonra x değerlerinin aralık bilgisi girilir Örn; (x,-10,10), en son olarak da grafiğimizin başlığını gireriz Örn; title:'ornek'.
+
+.evalf() : Bu fonksiyon sembolik olarak gösterilen matematiksel ifadenin sayısal olarak çözümünü elde eder.
+   
+matplotlib : Görselleştirme kütüphanesidir. %matplotlib ile hangi arka yüzü kullanmak istediğimizi belirleriz.
+
+%matplotlib inline : Ürettiğimiz matplotlib grafikleri defterin içine gömülür ve tam bir belge oluşturmamızı dağlar.
+
+%matplotlib notebook : Ürettiğimiz matplotlib grafikleri fareyle etkileşimli, kaydırıp zumlayabileceğimiz dinamik bir formda gösterir.
+
+pyplot : matplotlib modülünün bir fonksiyonudur. Görselleştirilmiş grafikler için kullanılır.
+
+pyplot.plot : Grafiğin ana komutunu oluşturur. İlk önce x değeri daha sonra y değeri girilir. Bu değerlere göre bir grafik oluşturulur.
+
+pyplot.show : Grafiğin ekranda gösterilmesini sağlar
